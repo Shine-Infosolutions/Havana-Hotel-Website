@@ -269,7 +269,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 1;
-    animation: slowZoom 18s ease-in-out infinite;
+   
 }
 
 
@@ -277,13 +277,10 @@
 .banner-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.75)
-    );
-    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.45); /* lighting kam, dark layer */
     z-index: 2;
 }
+
 
 /* Luxury Content Container (Left Align) */
 .banner-content.luxury {
@@ -312,8 +309,7 @@
 
 /* Luxury Serif Heading */
 .banner-content h1 {
-    font-family: "Georgia", serif;
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 40px;
@@ -657,11 +653,11 @@
     <div class="banner-overlay"></div>
 
     <!-- CONTENT -->
-    <div class="banner-content luxury">
-      <span class="sub-title">WELCOME TO HOTEL HAVANA</span>
-      <h1>LIFE ENJOY WITH <br>THE GREAT MOMENTS</h1>
-      <a href="page-rooms.html" class="btn-gold">Rooms & Suites</a>
-    </div>
+<div class="banner-content luxury">
+  <span class="sub-title">WELCOME TO HOTEL HAVANA</span>
+  <h1>BEST HOTEL IN GORAKHPUR<br> FOR   A COMFORTABLE & LUXURIOUS STAY</h1>
+  <a href="page-rooms.html" class="btn-gold">Rooms & Suites</a>
+</div>
 
   </div>
 </section>
@@ -1033,7 +1029,7 @@
 
     <!-- client-section -->
     <section class="client-section">
-      <div class="bg bg-image" style="background-image: url(images/background/3.jpg);"></div>
+      <div class="bg bg-image" style="background-color: #000;"></div>
       <div class="auto-container">
         <div class="sec-title light text-center"> <span class="sub-title">What says for customer</span>
           <h2>What Client's Say?</h2>
@@ -1359,7 +1355,12 @@
       </div>
     </footer>
     <!--End Main Footer -->
-  </div><!-- End Page Wrapper -->
+    <div style="position: fixed; bottom: 64px; right: 20px; z-index: 999; display: flex; flex-direction: column; gap: 10px;">
+  <a href="https://wa.me/919621051727" target="_blank" style="cursor: pointer;">
+    <span class="fab fa-whatsapp" style="font-size: 22px; background: #25d366; color: #fff; padding: 8px 12px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3);"></span>
+  </a>
+  </div>
+  <!-- End Page Wrapper -->
 
   <!--script-->
   <script>
